@@ -56,13 +56,9 @@ describe('parallel-await', function(){
             var y = await parallel(x);
             throw new Error('must fail waiting');
         }catch(err){
-            console.log('xxxxxxxxxxxxxx',err.message);
             showAndThrow(err.message, 'good fail')
-            console.log('xxxxxxxxxxxxx2',err.message);
             showAndThrow(target.join(''), 'tar');
-            console.log('xxxxxxxxxxxxx3',err.message);
             showAndThrow(y, undefined);
-            console.log('xxxxxxxxxxxxx3',err.message);
         }
     })
 });

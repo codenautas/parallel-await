@@ -10,9 +10,12 @@ export async function parallel<T>(objectWithUnresolvedPromises:T):Promise<{ [P i
     var resolved:{[P in keyof T]: Resolved<T[P]>};
     // @ts-ignore
     resolved = {};
-    for(var attr in objectWithUnresolvedPromises){
+    await Promise.all(Object.keys(objectWithUnresolvedPromises).map(
         // @ts-ignore
-        resolved[attr] = await objectWithUnresolvedPromises[attr];
-    }
+        async function(attr:keyof T){
+            // @ts-ignore
+            resolved[attr] = await objectWithUnresolvedPromises[attr];
+        }
+    ));
     return resolved;
 }

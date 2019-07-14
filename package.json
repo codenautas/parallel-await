@@ -1,7 +1,7 @@
 {
   "name": "parallel-await",
   "description": "Create HTML text from JS object",
-  "version": "1.0.9",
+  "version": "0.1.0",
   "author": "Codenautas <codenautas@googlegroups.com>",
   "license": "MIT",
   "repository": "codenautas/parallel-await",
