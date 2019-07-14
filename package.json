@@ -1,0 +1,45 @@
+{
+  "name": "parallel-await",
+  "description": "Create HTML text from JS object",
+  "version": "1.0.9",
+  "author": "Codenautas <codenautas@googlegroups.com>",
+  "license": "MIT",
+  "repository": "codenautas/parallel-await",
+  "contributors": [
+    {
+      "name": "Emilio Platzer",
+      "email": "emilioplatzer@gmail.com"
+    }
+  ],
+  "main": "lib/parallel-await.js",
+  "types": "lib/parallel-await.d.ts",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/mocha": "~5.2.7",
+    "mocha": "~6.1.4",
+    "nyc": "~14.1.1",
+    "best-globals": "~0.10.19",
+    "discrepances": "~0.2.4"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "scripts": {
+    "build": "tsc || echo 'with error'",
+    "build-test": "npm run build && (tsc -p tsconfig-test.json || echo \"w/err\") && npm test",
+    "test": "mocha lib/test*.js",
+    "test-cov": "nyc mocha test/",
+    "start": "node example/server.js",
+    "report": "istanbul report "
+  },
+  "qa-control": {
+    "package-version": "0.3.0",
+    "coverage": 100,
+    "run-in": "both",
+    "stability": "stable",
+    "type": "lib"
+  }
+}

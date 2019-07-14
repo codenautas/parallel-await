@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "outDir": "lib",
+        "module": "umd",
+        "target": "es2017",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "lib": [ "es5", "es2015" ]
+    },
+    "include":[
+        "test"
+    ]
+}

@@ -1,9 +1,17 @@
+<!--multilang v0 es:LEEME.md en:README.md -->
 # parallel-await
 
+<!--lang:es-->
+
+Sustituto de Promise.all para objetos y fuertemente tipado para usar en Typescript
+
+<!--lang:en--]
 
 typed parallel await of any object
 
+[!--lang:*-->
 
+<!-- cucardas -->
 ![extending](https://img.shields.io/badge/stability-extending-orange.svg)
 [![npm-version](https://img.shields.io/npm/v/parallel-await.svg)](https://npmjs.org/package/parallel-await)
 [![downloads](https://img.shields.io/npm/dm/parallel-await.svg)](https://npmjs.org/package/parallel-await)
@@ -13,13 +21,19 @@ typed parallel await of any object
 [![dependencies](https://img.shields.io/david/codenautas/parallel-await.svg)](https://david-dm.org/codenautas/parallel-await)
 [![qa-control](http://codenautas.com/github/codenautas/parallel-await.svg)](http://codenautas.com/github/codenautas/parallel-await)
 
+<!--multilang buttons-->
 
-language: ![English](https://raw.githubusercontent.com/codenautas/multilang/master/img/lang-en.png)
-also available in:
-[![Spanish](https://raw.githubusercontent.com/codenautas/multilang/master/img/lang-es.png)](LEEME.md)
+idioma: ![castellano](https://raw.githubusercontent.com/codenautas/multilang/master/img/lang-es.png)
+también disponible en:
+[![inglés](https://raw.githubusercontent.com/codenautas/multilang/master/img/lang-en.png)](README.md)
 
+<!--lang:es-->
+## Instalación
+
+<!--lang:en--]
 ## Install
 
+[!--lang:*-->
 
 ```sh
 $ npm install parallel-await
@@ -47,10 +61,21 @@ await outFh.write(mergedContent);
 await outFh.close();
 ```
 
+<!--lang:es-->
+
+Con `await parallel` espera la ejecución en paralelo que fue lanzada en la variable threeTasks.
+
+<!--lang:en--]
 
 `await parallel` awaits the parallel execution launched in `threeTasks` variable.
 
+<!--lang:es-->
+
+## Licencia
+
+<!--lang:en--]
 ## License
 
+[!--lang:*-->
 
 [MIT](LICENSE)
